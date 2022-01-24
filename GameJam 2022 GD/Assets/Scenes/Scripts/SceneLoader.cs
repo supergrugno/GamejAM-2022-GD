@@ -17,6 +17,11 @@ public class SceneLoader : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StaticValues.gameHP -= 1;
+        }
+
         //check HP to see if the game has to end
         HeartsHP = StaticValues.gameHP;
         if(HeartsHP<= 0)
