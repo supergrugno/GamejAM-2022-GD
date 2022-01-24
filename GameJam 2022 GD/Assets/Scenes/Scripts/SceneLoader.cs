@@ -12,6 +12,19 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private string endScreenScene;
     [SerializeField] private string[] minigameScenes;
 
+    //Gameplay and loose state
+    public int HeartsHP = 3;
+
+    private void Update()
+    {
+        //check HP to see if the game has to end
+        HeartsHP = StaticValues.gameHP;
+        if(HeartsHP<= 0)
+        {
+            LoadEndScreen();
+        }
+    }
+
 
     // scene management and loading
     public void LoadMinigame()
