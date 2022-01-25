@@ -13,7 +13,7 @@ public class BulletSpawner : MonoBehaviour
     public GameObject bulletPrefab;
 
     //timer
-    [SerializeField] private int mg1Timer;
+    [SerializeField] private float mg1Timer;
     public Slider timeSlider;
 
     private void Start()
@@ -21,6 +21,11 @@ public class BulletSpawner : MonoBehaviour
         mg1Timer = StaticValues.minigameTimer;
         timeSlider.maxValue = mg1Timer;
         timeSlider.value = mg1Timer;
+
+        if(StaticValues.minigameTimer < 9)
+        {
+            timeSpawn = 0.7f;
+        }
 
         StartCoroutine(SpawnABullet());
     }
@@ -49,6 +54,7 @@ public class BulletSpawner : MonoBehaviour
     private void EndMinigame()
     {
         StaticValues.monsterCount += 1;
+        StaticValues.minigameTimer = StaticValues.minigameTimer * 0.9f;
         SceneManager.LoadScene("Scene_Main");
     }
 }

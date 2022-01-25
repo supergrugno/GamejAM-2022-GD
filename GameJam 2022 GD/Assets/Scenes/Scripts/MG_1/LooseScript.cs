@@ -10,6 +10,7 @@ public class LooseScript : MonoBehaviour
         if(collision.tag == "Bullet")
         {
             StaticValues.gameHP -= 1;
+            StaticValues.minigameTimer = StaticValues.minigameTimer * 0.9f;
             SceneManager.LoadScene("Scene_Main");
         }
     }
