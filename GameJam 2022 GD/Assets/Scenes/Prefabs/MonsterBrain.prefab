@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6867901058445374285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.000000001, z: 0}
   m_LocalScale: {x: 0.024231, y: 0.024231, z: 0.024231}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -298,11 +298,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arms:
   - {fileID: 21300000, guid: 454b331fe7db60b45a4e0e7cccf1c06a, type: 3}
+  - {fileID: 21300000, guid: 90eb3603166fde84399fa9445014b4c5, type: 3}
+  - {fileID: 21300000, guid: 87be1779f88092f41a1dc9f2e8bfc631, type: 3}
+  - {fileID: 21300000, guid: 63bd8f408c9a55b44a6833da641a6250, type: 3}
+  - {fileID: 21300000, guid: cf6e7bd4610edad4a87521b87c70e9de, type: 3}
+  - {fileID: 21300000, guid: 20c3864a409cdc145838bdd1220fd217, type: 3}
+  - {fileID: 21300000, guid: 8c046a258146f58439495fdf23c889d2, type: 3}
+  - {fileID: 21300000, guid: 3beb75464580eab459787e7d15fca83c, type: 3}
   bodies:
   - {fileID: 21300000, guid: c2371a59ff70a004ba701a8c4fec0af0, type: 3}
+  - {fileID: 21300000, guid: 51bfcddc34e4cf94cb332bd212430cb6, type: 3}
+  - {fileID: 21300000, guid: dd9a7bd052d3efa4eb1829a7d8f3748e, type: 3}
+  - {fileID: 21300000, guid: 989b847d580f3274caaf712afbf009ea, type: 3}
+  - {fileID: 21300000, guid: ff364d69096aaa048abb269b9501624c, type: 3}
+  - {fileID: 21300000, guid: 2e88dbd403517f940a7a91e8f675ea77, type: 3}
+  - {fileID: 21300000, guid: ca68e31ea2a9045428a863c41f33a42c, type: 3}
+  - {fileID: 21300000, guid: 4e29b8da60ba19842afe2883ccc3579e, type: 3}
   heads:
   - {fileID: 21300000, guid: 1e6230feef2517644813aecbac44875a, type: 3}
+  - {fileID: 21300000, guid: 4a77f67591ab02d478c42c1b52067b36, type: 3}
+  - {fileID: 21300000, guid: ac8f8791753bc5745a5a77525c568595, type: 3}
+  - {fileID: 21300000, guid: 4651b49b9c7252f4c9a2d198159d3c39, type: 3}
+  - {fileID: 21300000, guid: e0b60531ecaf08543b4f9d479445749b, type: 3}
+  - {fileID: 21300000, guid: 96373903b11283041ac37c5b9366ef88, type: 3}
+  - {fileID: 21300000, guid: 4d4df60a5bae0c7498ca3417fa0f1cf2, type: 3}
+  - {fileID: 21300000, guid: a36db638d2697bc4a8418af02a6fdb9b, type: 3}
   legs:
+  - {fileID: 21300000, guid: a4799bf2b983a2a468b8582e80be0651, type: 3}
+  - {fileID: 21300000, guid: 4c1c45db756618d44b221f96b0e15038, type: 3}
+  - {fileID: 21300000, guid: 6dd6228a077cc4a4a9ec72a6b8a67d97, type: 3}
+  - {fileID: 21300000, guid: ede3c49b377db8d40836c10277193d2c, type: 3}
+  - {fileID: 21300000, guid: 2c40708d5a9effe41a1fe484094efd09, type: 3}
+  - {fileID: 21300000, guid: f936a78826da826438af900987ee5380, type: 3}
+  - {fileID: 21300000, guid: 241f6780b78e5fe4c8458df39b083882, type: 3}
   - {fileID: 21300000, guid: feac9047073c70d4b93002eb7b7c5651, type: 3}
   _arms: {fileID: 7277637347911909731}
   _body: {fileID: 8720681031189659971}
@@ -553,7 +581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8720681031189659971}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.00000001, z: 0}
   m_LocalScale: {x: 0.024231, y: 0.024231, z: 0.024231}
   m_ConstrainProportionsScale: 0
   m_Children: []
