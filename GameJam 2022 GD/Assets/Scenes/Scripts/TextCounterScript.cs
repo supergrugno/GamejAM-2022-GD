@@ -16,7 +16,7 @@ public class TextCounterScript : MonoBehaviour
 
     private void Update()
     {
-        textString = StaticValues.monsterCount.ToString();
+        textString = StaticValues.minigameTimer.ToString();
         textmeshPro.SetText(textString);
 
         //testing keys 

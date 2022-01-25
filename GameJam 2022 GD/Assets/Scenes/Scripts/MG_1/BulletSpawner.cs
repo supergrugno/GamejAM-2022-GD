@@ -14,11 +14,13 @@ public class BulletSpawner : MonoBehaviour
 
     //timer
     [SerializeField] private float mg1Timer;
+    private float timerRemember;
     public Slider timeSlider;
 
     private void Start()
     {
         mg1Timer = StaticValues.minigameTimer;
+        timerRemember = StaticValues.minigameTimer;
         timeSlider.maxValue = mg1Timer;
         timeSlider.value = mg1Timer;
 
@@ -32,7 +34,7 @@ public class BulletSpawner : MonoBehaviour
 
     private void Update()
     {
-        float time = mg1Timer - Time.time;
+        float time = mg1Timer - Time.timeSinceLevelLoad;
 
         timeSlider.value = time;
         if(time <= 0)
@@ -54,7 +56,7 @@ public class BulletSpawner : MonoBehaviour
     private void EndMinigame()
     {
         StaticValues.monsterCount += 1;
-        StaticValues.minigameTimer = StaticValues.minigameTimer * 0.9f;
+        StaticValues.minigameTimer = timerRemember * 0.9f;
         SceneManager.LoadScene("Scene_Main");
     }
 }

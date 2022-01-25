@@ -336,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704717132}
   - component: {fileID: 704717133}
+  - component: {fileID: 704717134}
   m_Layer: 0
   m_Name: BulletsSpawner
   m_TagString: Untagged
@@ -375,6 +376,18 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6819885014759312245, guid: 02390aac4e378244c8fcb969501d51af, type: 3}
   mg1Timer: 0
   timeSlider: {fileID: 441637888}
+--- !u!114 &704717134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704717131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efade9db99dc2e429aa7939f6fe1bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980090889
 GameObject:
   m_ObjectHideFlags: 0
