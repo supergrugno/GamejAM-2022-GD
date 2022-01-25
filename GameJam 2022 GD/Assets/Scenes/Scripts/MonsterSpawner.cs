@@ -6,13 +6,15 @@ public class MonsterSpawner : MonoBehaviour
 {
     public GameObject monsterPrefab;
     public float radius = 5;
+    private RectTransform rt;
 
-    private void Update()
+    private void Start()
     {
-        if(this.gameObject.transform.childCount< StaticValues.monsterCount)
+        rt = GetComponent<RectTransform>();
+        for (int i = 0; i < StaticValues.monsterCount; i++)
         {
-            GameObject monster = Instantiate(monsterPrefab, Random.insideUnitCircle * radius, Quaternion.identity);
-            monster.transform.SetParent(this.gameObject.transform);
+            Instantiate(monsterPrefab, new Vector3(Random.Range(rt.rect.xMin, rt.rect.xMax),
+                Random.Range(rt.rect.yMin, rt.rect.yMax),0) + transform.position, Quaternion.identity);
         }
     }
 }
