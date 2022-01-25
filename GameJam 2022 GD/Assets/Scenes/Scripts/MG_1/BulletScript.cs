@@ -10,6 +10,14 @@ public class BulletScript : MonoBehaviour
     private void Start()
     {
         target = GameObject.Find("Heart");
+        if(StaticValues.minigameTimer < 10)
+        {
+            bulletSpeed = 3;
+        }
+        if(StaticValues.minigameTimer < 7)
+        {
+            bulletSpeed = 4;
+        }
     }
 
     private void Update()
