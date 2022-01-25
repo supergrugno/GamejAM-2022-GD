@@ -997,8 +997,7 @@ MonoBehaviour:
   endScreenScene: Scene_EndScreen
   minigameScenes:
   - Scene_mg_1
-  - Scene_mg_1
-  - Scene_mg_1
+  - Scene_mg_2
   HeartsHP: 3
 --- !u!114 &1421910815
 MonoBehaviour:
