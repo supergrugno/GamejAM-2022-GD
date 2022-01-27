@@ -8,6 +8,8 @@ public class GameResetter : MonoBehaviour
     {
         StaticValues.monsterCount = 0;
         StaticValues.gameHP = 3;
+        StaticValues.gameHPcontroller = 3;
+        StaticValues.gameIsOn = false;
         StaticValues.minigameTimer = 15;
     }
 }
