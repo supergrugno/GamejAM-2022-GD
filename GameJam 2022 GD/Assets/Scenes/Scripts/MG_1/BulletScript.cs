@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.Find("Heart");
+        target = GameObject.FindGameObjectWithTag("Heart");
         if(StaticValues.minigameTimer < 10)
         {
             bulletSpeed = 3;

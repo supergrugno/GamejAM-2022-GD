@@ -11,6 +11,7 @@ public class BulletSpawner : MonoBehaviour
     public float timeSpawn = 1.5f;
 
     public GameObject bulletPrefab;
+    public GameObject Heart;
 
     //timer
     [SerializeField] private float mg1Timer;
@@ -45,7 +46,7 @@ public class BulletSpawner : MonoBehaviour
 
     IEnumerator SpawnABullet()
     {
-        Vector2 spawnPos = GameObject.Find("Heart").transform.position;
+        Vector2 spawnPos = Heart.transform.position;
         spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
 
         Instantiate(bulletPrefab, spawnPos, Quaternion.identity);
