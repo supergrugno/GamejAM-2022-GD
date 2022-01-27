@@ -954,6 +954,7 @@ GameObject:
   - component: {fileID: 809768330}
   - component: {fileID: 809768329}
   - component: {fileID: 809768331}
+  - component: {fileID: 809768332}
   m_Layer: 5
   m_Name: MonsterShadow
   m_TagString: Untagged
@@ -1039,6 +1040,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &809768332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809768327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757a810dcb5a00c439dcef1bea1e5a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuScene: Scene_MainMenu
+  MainScene: Scene_Main
+  endScreenScene: Scene_EndScreen
+  minigameScenes:
+  - Scene_mg_1
+  - Scene_mg_2
+  - Scene_mg_3
+  HeartsHP: 3
 --- !u!1 &1151252290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1193060400
 RectTransform:
   m_ObjectHideFlags: 0
