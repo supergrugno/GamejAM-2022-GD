@@ -17,7 +17,7 @@ public class TextCounterScript : MonoBehaviour
     private void Update()
     {
         textString = StaticValues.monsterCount.ToString();
-        textmeshPro.SetText("Succesful Dates:      " + textString);
+        textmeshPro.SetText(textString);
 
         //testing keys 
         //TO REMOVE IN END PRODUCT

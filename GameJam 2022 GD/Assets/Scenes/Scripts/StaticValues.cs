@@ -8,5 +8,8 @@ public class StaticValues : MonoBehaviour
 
     static public int monsterCount = 0;
     static public int gameHP = 3;
+    static public int gameHPcontroller = 3;
+    static public bool gameIsOn = false;
+
     static public float minigameTimer = 15;
 }
