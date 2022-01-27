@@ -9,6 +9,7 @@ public class MainCanvasMG : MonoBehaviour
 
     public GameObject flower1;
     public GameObject flower2;
+    public GameObject flower3;
 
     private void Start()
     {
@@ -29,16 +30,21 @@ public class MainCanvasMG : MonoBehaviour
 
         if (StaticValues.gameHP == 3)
         {
-            flower1.SetActive(true);
-            flower2.SetActive(true);
+            flower1.SetActive(false);
+            flower2.SetActive(false);
+            flower3.SetActive(true);
         }
         else if (StaticValues.gameHP == 2)
         {
-            flower2.SetActive(false);
-        }else if (StaticValues.gameHP == 1)
-        {
             flower1.SetActive(false);
+            flower2.SetActive(true);
+            flower3.SetActive(false);
+        }
+        else if (StaticValues.gameHP == 1)
+        {
+            flower1.SetActive(true);
             flower2.SetActive(false);
+            flower3.SetActive(false);
         }
     }
 }

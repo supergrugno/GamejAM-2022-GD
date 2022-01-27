@@ -336,8 +336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasWin: {fileID: 131698764}
   canvasLoose: {fileID: 347713406}
-  flower1: {fileID: 1151252290}
-  flower2: {fileID: 1751874394}
+  flower1: {fileID: 721940277}
+  flower2: {fileID: 1151252290}
+  flower3: {fileID: 1751874394}
 --- !u!1 &347713406
 GameObject:
   m_ObjectHideFlags: 0
