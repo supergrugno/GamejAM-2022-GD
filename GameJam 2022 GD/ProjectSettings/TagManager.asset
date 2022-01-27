@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Heart
   - Bullet
+  - GameMusic
   layers:
   - Default
   - TransparentFX
