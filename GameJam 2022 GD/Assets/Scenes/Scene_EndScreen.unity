@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 21821311}
   - component: {fileID: 21821314}
   - component: {fileID: 21821313}
-  - component: {fileID: 21821312}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -162,18 +161,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.5, y: 176.2}
   m_SizeDelta: {x: 311.4458, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &21821312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21821310}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e8292da7f15cc408d60b9fb8cd4667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &21821313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +271,6 @@ GameObject:
   - component: {fileID: 22282650}
   - component: {fileID: 22282649}
   - component: {fileID: 22282653}
-  - component: {fileID: 22282654}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -385,24 +371,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 22282648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 757a810dcb5a00c439dcef1bea1e5a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuScene: Scene_MainMenu
-  MainScene: 
-  endScreenScene: 
-  minigameScenes: []
-  HeartsHP: 3
---- !u!114 &22282654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22282648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e8292da7f15cc408d60b9fb8cd4667, type: 3}
+  m_Script: {fileID: 11500000, guid: 05425101df3dcbc49a042f405ad99be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &144947270
@@ -1069,7 +1038,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 22282653}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_TargetAssemblyTypeName: EndScreenLoader, Assembly-CSharp
         m_MethodName: LoadMainMenu
         m_Mode: 1
         m_Arguments:
